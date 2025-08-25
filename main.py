@@ -20,7 +20,7 @@ user_input = pd.DataFrame([[sepal_length,sepal_width,petal_length,petal_width]],
                           columns=['sepal_length','sepal_width','petal_length','petal_width'])
 st.write(user_input)
 
-model_path = path.join("model","iris_classifier.pkl")
+model_path = path.join("Model","iris_classifier.pkl")
 with open (model_path,'rb')as file:iris_predictor = pickle.load(file)
 
 dict_species ={0:'setosa',1:'versicolor',2:'virginica'}
